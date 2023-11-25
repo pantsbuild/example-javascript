@@ -50,6 +50,12 @@ jobs:
     - name: List all build targets
       run:  |
         pants list ::
+    - name: List all dependencies
+      run: |
+        pants dependencies ::
+    - name: Lint
+      run: |
+        pants lint ::
     - name: Upload pants log
       uses: actions/upload-artifact@v3
       with:
