@@ -4,3 +4,7 @@
 /.pids
 /.pants.workdir.file_lock*
 
+node_modules
+
+# Build output when build invoked with `npm run build`
+dist_npm
