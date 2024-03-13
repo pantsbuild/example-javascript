@@ -17,6 +17,32 @@ Try these out in this repo.
 
 ```
 pants dependencies src/index.js
+pants dependencies --transitive src/index.js
+```
+
+## Lint and format
+
+```
+pants lint ::
+pants fmt ::
+```
+
+## Test
+
+```
+pants test ::
+pants test --use-coverage ::
+```
+
+The example is configured to use Jest as the test runner via `package.json` "scripts.test" key.
+Mocha is also supported by the Javascript backend.
+
+## Package
+
+The example uses esbuild to package the source into a single file in the `dist` directory.
+
+```
+pants package ::
 ```
 
 ## Generate lockfiles
